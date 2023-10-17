@@ -1,4 +1,9 @@
 .map {
     margin-top: 12px;
-    height: calc(100% - 12px - 24px);
+    height: 320px;
 }
+
+/*
+change the containers to not have a height and a width
+change the actual content themselves like .map to 662px by 320px
+*/

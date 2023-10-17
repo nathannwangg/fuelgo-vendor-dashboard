@@ -29,9 +29,13 @@
 
 .widget-container {
   margin: 48px 64px 48px 64px;
-  width: 650px;
-  height: 320px;
-  border: 2px solid red;
+  width: fit-content;
+  min-width: 782px;
+  //min-height: 320px;
+  background: #F7F9FB;
+  border-radius: 16px;
+  padding: 48px;
+  //border: 2px solid red;
 
   .widget-heading {
       font-weight: bolder;

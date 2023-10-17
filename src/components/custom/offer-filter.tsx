@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
 import './styles/offer-filter.scss'
@@ -7,9 +8,10 @@ import { Button } from '../ui/button';
 const OfferFilter = ()  => {
   return (
     <>
-      <h1>Create an Offer</h1>
+      <div className="widget-container">
+        <h1 className="widget-heading">Create an Offer</h1>
       <div className="filter-container flex">
-        <Select>
+        <Select className>
           <SelectTrigger className="w-[180px]">
             <SelectValue placeholder="Theme"/>
           </SelectTrigger>
@@ -76,6 +78,7 @@ const OfferFilter = ()  => {
         </div>
       </div>
       <Button>Submit</Button>
+    </div>
     </>
   )
 };
