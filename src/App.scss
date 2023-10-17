@@ -1,0 +1,28 @@
+.heading {
+  color: blue;
+  font-size: 24pt;
+}
+
+#page-container {
+  display: flex;
+  height: 100%;
+
+  & > .content {
+    height: 100%;
+  }
+
+  .sidenav-container {
+    width: 400px;
+    border-right: 2px solid #c0bebe;
+    height: 100%;
+  }
+
+  .content-container {
+    width: 100%;
+    overflow: scroll;
+  }
+
+  * {
+    font-family: "Roboto", sans-serif;
+  }
+}
