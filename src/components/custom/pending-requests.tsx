@@ -24,7 +24,8 @@ const requests = [
 
 const PendingRequests = () => {
   return (
-    <><h1>Pending Outgoing Requests</h1><Table>
+    <><div className="widget-container">
+      <h1 className="widget-heading">Pending Outgoing Requests</h1><Table>
       <TableHeader>
         <TableRow className="flex-row justify-between">
           <TableHead>Request Number</TableHead>
@@ -43,7 +44,7 @@ const PendingRequests = () => {
           </TableRow>
         ))}
       </TableBody>
-    </Table></>
+    </Table></div></>
   )
 };
 

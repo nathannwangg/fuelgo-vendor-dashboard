@@ -26,3 +26,15 @@
     font-family: "Roboto", sans-serif;
   }
 }
+
+.widget-container {
+  margin: 48px 64px 48px 64px;
+  width: 650px;
+  height: 320px;
+  border: 2px solid red;
+
+  .widget-heading {
+      font-weight: bolder;
+  }
+
+}

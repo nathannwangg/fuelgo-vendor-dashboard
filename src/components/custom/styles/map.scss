@@ -1,13 +1,4 @@
-.map-container {
-    margin: 48px 64px 48px 64px;
-
-    .map-heading {
-        font-weight: bolder;
-    }
-
-    .map {
-        margin-top: 12px;
-        width: 650px;
-        height: 320px;
-    }
+.map {
+    margin-top: 12px;
+    height: calc(100% - 12px - 24px);
 }
