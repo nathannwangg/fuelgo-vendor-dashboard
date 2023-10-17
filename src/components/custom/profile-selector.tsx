@@ -21,8 +21,8 @@ import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 
 const profiles = [
   {
-    value: "nishant arora",
-    label: "Nishant Arora",
+    value: "LeBron James",
+    label: "LeBron James",
   },
   {
     value: "nathan wang",

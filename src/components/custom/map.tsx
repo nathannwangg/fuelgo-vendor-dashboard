@@ -3,6 +3,7 @@ import React from 'react';
 import { MapContainer, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { useEffect, useState } from 'react';
+import './styles/map.scss'
 
 const Map = () => {
   const [location, setLocation] = useState<{lat: number, lon: number} | null>(null);
@@ -18,10 +19,12 @@ const Map = () => {
   
   return location
       ? <>
-        <h4>Operations</h4>
-          <MapContainer className="map" center={[location.lat, location.lon]} zoom={13} style={{height: '400px', width: '80%'}}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'/>
-          </MapContainer>
+        <div className="map-container">
+          <h4 className="map-heading">Operations</h4>
+            <MapContainer className="map" center={[location.lat, location.lon]} zoom={13} style={{height: '400px', width: '80%'}}>
+              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'/>
+            </MapContainer>
+        </div>
         </>
       : <>
         <div role="status">
